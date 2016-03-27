@@ -20,7 +20,7 @@ public class DoctorRepository {
     }
 
     public List<Doctor> getAllDoctors() {
-        final String SQL = "select * from Doctors";
+        final String SQL = "select * from doctors";
 
         return jdbcTemplate.query(SQL, (rs, rowNum) -> {
             Doctor doctor = new Doctor();
